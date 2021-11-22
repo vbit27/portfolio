@@ -20,20 +20,26 @@ export const Navbar: React.FC = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <h5>Vasil Bituni</h5>
+            <h3>VB</h3>
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <AiOutlineClose /> : <AiOutlineMenu />}
           </MobileIcon>
           <NavMenu click={click}>
             <NavItem>
-              <NavLinks to={'/'}>Projects</NavLinks>
+              <NavLinks to={'/'}>
+                <p>Projects</p>
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to={'/'}>About</NavLinks>
+              <NavLinks to={'/'}>
+                <p>About</p>
+              </NavLinks>
             </NavItem>{' '}
             <NavItem>
-              <NavLinks to={'/'}>Contact</NavLinks>
+              <NavLinks to={'/'}>
+                <p>Contact</p>
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

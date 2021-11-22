@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Container } from '../../globalStyle';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 export const Nav = styled.nav`
   background-color: #f2f2;
@@ -40,7 +39,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 40%);
+    transform: translate(-100%, 20%);
     font-size: 1.8rem;
     cursor: pointer;
   }

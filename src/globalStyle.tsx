@@ -5,8 +5,68 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif;
 }
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: #FEFAF6;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+
+h1 {
+font-size: 67px;
+line-height: 89px;
+letter-spacing: 0.02em;
+
+
+}
+
+h2 {
+font-size: 50px;
+line-height: 67px;
+letter-spacing: 0.02em;
+
+}
+
+h3 {
+font-size: 38px;
+font-weight: 700;
+line-height: 51px;
+}
+
+h4 {
+font-family: 'Work Sans', sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 34px;
+
+
+}
+
+h5 {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 0.04em;
+text-transform: uppercase
+}
+
+
+
 `;
 
 export const Container = styled.div`
