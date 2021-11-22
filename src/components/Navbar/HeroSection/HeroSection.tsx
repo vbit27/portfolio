@@ -1,5 +1,9 @@
 import React from 'react';
-import { HeroContainer, TextWrapper } from './HeroSection.styled';
+import {
+  HeroContainer,
+  TextWrapper,
+  LineContainer,
+} from './HeroSection.styled';
 
 const HeroSection: React.FC = () => {
   return (
@@ -15,6 +19,7 @@ const HeroSection: React.FC = () => {
             on building accessible, human-centered products.
           </h4>
         </TextWrapper>
+        <LineContainer />
       </HeroContainer>
     </>
   );
