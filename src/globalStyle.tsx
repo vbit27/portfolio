@@ -84,4 +84,29 @@ export const Container = styled.div`
   }
 `;
 
+export const Button = styled.button<ButtonProps>`
+  border-radius: 25px;
+  background-color: ${({ primary }) => (primary ? '#000' : 'transparent')};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? '12px 40px' : '12px 30px')};
+  color: ${({ primary }) => (primary ? '#fff' : '#000')};
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  /*&:hover {
+    transition: all 0.3s ease-out;
+
+  }*/
+`;
+
+interface ButtonProps {
+  primary: boolean;
+  big: boolean;
+}
+
 export default GlobalStyle;

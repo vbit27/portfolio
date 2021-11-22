@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
-import GlobalStyle, { Container } from './globalStyle';
+import GlobalStyle, { Button, Container } from './globalStyle';
 
 function App() {
   return (
@@ -20,6 +20,12 @@ function App() {
           <h5>react js axiosAPI router</h5>
           <a href="/">ia m a link</a>
           <p>hello there</p>
+          <Button primary big>
+            Live
+          </Button>
+          <Button primary={false} big>
+            Code
+          </Button>
         </Container>
       </BrowserRouter>
     </>
