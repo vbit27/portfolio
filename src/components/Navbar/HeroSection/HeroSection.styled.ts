@@ -10,4 +10,8 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  h4 {
+    width: 65ch;
+  }
 `;

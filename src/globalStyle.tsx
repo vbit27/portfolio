@@ -65,7 +65,9 @@ letter-spacing: 0.04em;
 text-transform: uppercase
 }
 
-
+a {
+  color: #000000;
+}
 
 `;
 
