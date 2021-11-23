@@ -12,8 +12,7 @@ const HeroSection: React.FC = () => {
       <HeroContainer>
         <TextWrapper>
           <h1>
-            Hi, I'm Vasil<span style={{ color: '#ff3644' }}>.</span> <br />I
-            build things for the web<span style={{ color: '#ff3644' }}>.</span>
+            Hi, I'm Vasil. <br />I build things for the web.
           </h1>
           <h4>
             I’m a web-developer specializing in building (and occasionally

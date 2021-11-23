@@ -62,11 +62,13 @@ h5 {
 font-size: 13px;
 font-weight: 700;
 letter-spacing: 0.04em;
-text-transform: uppercase
+text-transform: uppercase;
+word-spacing: 5px;
 }
 
 a {
   color: #000000;
+  text-decoration: none;
 }
 
 `;
@@ -99,6 +101,7 @@ export const Button = styled.button<ButtonProps>`
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 
   /*&:hover {
     transition: all 0.3s ease-out;
