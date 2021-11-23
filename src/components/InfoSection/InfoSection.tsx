@@ -8,6 +8,8 @@ import {
   TextWrapper,
   Description,
   ButtonContainer,
+  ImgWrapper,
+  Img,
 } from './InfoSection.styled';
 
 const InfoSection: React.FC<InfoSectionProps> = ({
@@ -15,6 +17,11 @@ const InfoSection: React.FC<InfoSectionProps> = ({
   headline,
   description,
   subtittle,
+  primaryBtnLabel,
+  secondaryBtnLabel,
+  img,
+  alt,
+  start,
 }) => {
   return (
     <>
@@ -24,22 +31,30 @@ const InfoSection: React.FC<InfoSectionProps> = ({
             <TextWrapper>
               <h3>{headline} </h3>
               <Description>{description}</Description>
-              <h5>{subtittle}</h5>
+              {subtittle && <h5>{subtittle}</h5>}
               <Link to="/">
                 <ButtonContainer>
-                  <Button primary big>
-                    Live
-                  </Button>
-                  <Button primary={false} big>
-                    View Code
-                  </Button>
+                  {primaryBtnLabel && (
+                    <Button primary big>
+                      {primaryBtnLabel}
+                    </Button>
+                  )}
+                  {secondaryBtnLabel && (
+                    <Button primary={false} big>
+                      {secondaryBtnLabel}
+                    </Button>
+                  )}
                 </ButtonContainer>
               </Link>
             </TextWrapper>
           </InfoColumn>
+          <InfoColumn>
+            <ImgWrapper start={start}>
+              <Img src={img} alt={alt} />
+            </ImgWrapper>
+          </InfoColumn>
         </InfoRow>
       </InfoSec>
-      ;
     </>
   );
 };
@@ -49,6 +64,11 @@ interface InfoSectionProps {
   headline: string;
   description: string;
   subtittle?: string;
+  img: string;
+  alt: string;
+  start: boolean;
+  primaryBtnLabel: string;
+  secondaryBtnLabel: string;
 }
 
 export default InfoSection;

@@ -29,7 +29,6 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
   max-width: 600px;
   padding-top: 0;
-  padding-bottom: 60px;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
@@ -50,6 +49,25 @@ export const ButtonContainer = styled.div`
   }
 `;
 
+export const ImgWrapper = styled.div<ImgWrapperProps>`
+  max-width: 585px;
+  display: flex;
+  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+`;
+
+export const Img = styled.img`
+  padding-right: 0;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 100%;
+`;
+
 interface InforRowProps {
   imgStart: boolean;
+}
+
+interface ImgWrapperProps {
+  start: boolean;
 }
