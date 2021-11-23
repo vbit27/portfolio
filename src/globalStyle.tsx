@@ -88,6 +88,10 @@ export const Container = styled.div`
   }
 `;
 
+export const SectionTittle = styled.div`
+  margin-top: 10vh;
+`;
+
 export const Button = styled.button<ButtonProps>`
   border-radius: 25px;
   background-color: ${({ primary }) => (primary ? '#000' : 'transparent')};

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const InfoSec = styled.div`
-  padding: 160px 0;
+  padding: 100px 0;
 `;
 
 export const InfoRow = styled.div<InforRowProps>`
@@ -27,7 +27,7 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 600px;
+  max-width: 650px;
   padding-top: 0;
 
   @media screen and (max-width: 768px) {

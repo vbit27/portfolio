@@ -5,6 +5,7 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   height: calc(100vh - 60px);
   justify-content: center;
+  margin-bottom: 100px;
 `;
 
 export const TextWrapper = styled.div`

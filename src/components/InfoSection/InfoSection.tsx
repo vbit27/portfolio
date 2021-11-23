@@ -32,20 +32,22 @@ const InfoSection: React.FC<InfoSectionProps> = ({
               <h3>{headline} </h3>
               <Description>{description}</Description>
               {subtittle && <h5>{subtittle}</h5>}
-              <Link to="/">
-                <ButtonContainer>
-                  {primaryBtnLabel && (
+              <ButtonContainer>
+                {primaryBtnLabel && (
+                  <Link to="/">
                     <Button primary big>
                       {primaryBtnLabel}
                     </Button>
-                  )}
-                  {secondaryBtnLabel && (
+                  </Link>
+                )}
+                {secondaryBtnLabel && (
+                  <Link to="/">
                     <Button primary={false} big>
                       {secondaryBtnLabel}
                     </Button>
-                  )}
-                </ButtonContainer>
-              </Link>
+                  </Link>
+                )}
+              </ButtonContainer>
             </TextWrapper>
           </InfoColumn>
           <InfoColumn>
