@@ -3,7 +3,6 @@ import {
   HeroContainer,
   TextWrapper,
   LineContainer,
-  CircleContainer,
   Circle,
 } from './HeroSection.styled';
 
@@ -13,7 +12,8 @@ const HeroSection: React.FC = () => {
       <HeroContainer>
         <TextWrapper>
           <h1>
-            Hi. Vasil here. <br />I build things for the web.
+            Hi, I'm Vasil<span style={{ color: '#ff3644' }}>.</span> <br />I
+            build things for the web<span style={{ color: '#ff3644' }}>.</span>
           </h1>
           <h4>
             I’m a web-developer specializing in building (and occasionally

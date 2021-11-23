@@ -15,32 +15,56 @@ export const TextWrapper = styled.div`
   h4 {
     max-width: 65ch;
   }
+
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 50px;
+      line-height: 67px;
+      letter-spacing: 0.02em;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.75;
+    }
+  }
+
+  @media screen and (max-width: 481px) {
+    h1 {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 51px;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.75;
+    }
+  }
 `;
 
 export const LineContainer = styled.div`
   width: 100%;
   margin-top: 4rem;
-  border-bottom: 1px solid #545461;
-`;
+  border-bottom: 1px solid #bdbdbd;
 
-export const CircleContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  z-index: 5;
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
 `;
 
 export const Circle = styled.span`
   position: absolute;
   bottom: 30px;
   left: 50%;
-  height: 15px;
-  width: 15px;
-  background-color: #ff3644;
+  height: 12px;
+  width: 12px;
+  background-color: #000;
   border-radius: 50%;
   display: inline-block;
-  //animation-duration: 2s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce-2;
   animation-timing-function: ease;
@@ -59,5 +83,13 @@ export const Circle = styled.span`
 
   @media screen and (max-width: 960px) {
     bottom: 10px;
+  }
+
+  @media screen and (max-width: 481px) {
+    @keyframes bounce-2 {
+      50% {
+        transform: translateY(-30px);
+      }
+    }
   }
 `;
