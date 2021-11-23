@@ -3,6 +3,8 @@ import {
   HeroContainer,
   TextWrapper,
   LineContainer,
+  CircleContainer,
+  Circle,
 } from './HeroSection.styled';
 
 const HeroSection: React.FC = () => {
@@ -20,6 +22,7 @@ const HeroSection: React.FC = () => {
           </h4>
         </TextWrapper>
         <LineContainer />
+        <Circle />
       </HeroContainer>
     </>
   );
