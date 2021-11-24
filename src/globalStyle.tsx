@@ -106,6 +106,7 @@ export const Button = styled.button<ButtonProps>`
   border: none;
   cursor: pointer;
   text-decoration: none;
+  width: fit-content;
 
   /*&:hover {
     transition: all 0.3s ease-out;

@@ -6,7 +6,6 @@ export const SkillsSec = styled.div`
   padding: 100px 0;
   background-color: #fef5e9;
   border-radius: 24px;
-  display: relative;
 `;
 
 export const SkillsRow = styled.div`
