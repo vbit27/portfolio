@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from '../globalStyle';
 import {
   Input,
@@ -12,20 +12,7 @@ const initialState = { name: '', email: '', message: '' };
 
 const Form: React.FC = () => {
   const [input, setInput] = useState(initialState);
-  const [error, setError] = useState('');
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    for (let key in input) {
-      if (input[key as keyof InputProps] === '') {
-        setError(`${key} is missing `);
-        return;
-      }
-    }
-    setError('');
-    console.log(input);
-  };
+  const [errors, setErrors] = useState(initialState);
 
   const handleChange = (
     e:
@@ -36,6 +23,35 @@ const Form: React.FC = () => {
     const inputValue = e.currentTarget.value;
 
     setInput((prev) => ({ ...prev, [inputName]: inputValue }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (Object.values(errors).every((error) => error === '')) {
+      setInput(initialState);
+    }
+  };
+
+  const validateInput = () => {
+    if (!input.name.trim()) {
+      setErrors((prev) => ({ ...prev, name: 'Username required' }));
+    } else {
+      setErrors((prev) => ({ ...prev, name: '' }));
+    }
+    if (!input.message.trim()) {
+      setErrors((prev) => ({ ...prev, message: 'Message required' }));
+    } else {
+      setErrors((prev) => ({ ...prev, message: '' }));
+    }
+
+    if (!input.email) {
+      setErrors((prev) => ({ ...prev, email: 'Email required' }));
+    } else if (!/\S+@\S+\.\S+/.test(input.email)) {
+      setErrors((prev) => ({ ...prev, email: 'Email address is invalid' }));
+    } else {
+      setErrors((prev) => ({ ...prev, email: '' }));
+    }
   };
 
   return (
@@ -49,6 +65,8 @@ const Form: React.FC = () => {
             value={input.name}
             onChange={(e) => handleChange(e)}
           />
+          <ErrorMessage>{errors.name && <h5>{errors.name}</h5>}</ErrorMessage>
+
           <label htmlFor="email">Email:</label>
           <Input
             type="email"
@@ -56,15 +74,19 @@ const Form: React.FC = () => {
             value={input.email}
             onChange={(e) => handleChange(e)}
           />
+          <ErrorMessage>{errors.email && <h5>{errors.email}</h5>}</ErrorMessage>
+
           <label htmlFor="message">Message:</label>
           <TextArea
             name="message"
             value={input.message}
             onChange={(e) => handleChange(e)}
           />
-          <ErrorMessage>{error && <h5>{error}</h5>}</ErrorMessage>
+          <ErrorMessage>
+            {errors.message && <h5>{errors.message}</h5>}
+          </ErrorMessage>
 
-          <Button primary big type="submit">
+          <Button primary big type="submit" onClick={validateInput}>
             Send
           </Button>
         </StyledForm>
@@ -72,11 +94,5 @@ const Form: React.FC = () => {
     </>
   );
 };
-
-interface InputProps {
-  name: string;
-  email: string;
-  message: string;
-}
 
 export default Form;
