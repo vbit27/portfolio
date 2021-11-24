@@ -73,10 +73,6 @@ export const NavItem = styled.li`
   }*/
 `;
 
-interface NavMenuProps {
-  click: boolean;
-}
-
 export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
@@ -91,3 +87,7 @@ export const NavLinks = styled(Link)`
     display: table;
   }
 `;
+
+interface NavMenuProps {
+  click: boolean;
+}

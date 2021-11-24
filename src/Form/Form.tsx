@@ -13,6 +13,7 @@ const initialState = { name: '', email: '', message: '' };
 const Form: React.FC = () => {
   const [input, setInput] = useState(initialState);
   const [errors, setErrors] = useState(initialState);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (
     e:
@@ -30,8 +31,14 @@ const Form: React.FC = () => {
 
     if (Object.values(errors).every((error) => error === '')) {
       setInput(initialState);
+      setErrors(initialState);
+      setSubmitted(true);
     }
   };
+
+  useEffect(() => {
+    console.log(submitted);
+  }, [submitted]);
 
   const validateInput = () => {
     if (!input.name.trim()) {
@@ -57,39 +64,50 @@ const Form: React.FC = () => {
   return (
     <>
       <FormContainer>
-        <StyledForm onSubmit={(e) => handleSubmit(e)}>
-          <label htmlFor="name">Name:</label>
-          <Input
-            type="text"
-            name="name"
-            value={input.name}
-            onChange={(e) => handleChange(e)}
-          />
-          <ErrorMessage>{errors.name && <h5>{errors.name}</h5>}</ErrorMessage>
+        {!submitted ? (
+          <StyledForm onSubmit={(e) => handleSubmit(e)}>
+            <label htmlFor="name">Name:</label>
+            <Input
+              type="text"
+              name="name"
+              value={input.name}
+              onChange={(e) => handleChange(e)}
+            />
+            <ErrorMessage>{errors.name && <h5>{errors.name}</h5>}</ErrorMessage>
 
-          <label htmlFor="email">Email:</label>
-          <Input
-            type="email"
-            name="email"
-            value={input.email}
-            onChange={(e) => handleChange(e)}
-          />
-          <ErrorMessage>{errors.email && <h5>{errors.email}</h5>}</ErrorMessage>
+            <label htmlFor="email">Email:</label>
+            <Input
+              type="email"
+              name="email"
+              value={input.email}
+              onChange={(e) => handleChange(e)}
+            />
+            <ErrorMessage>
+              {errors.email && <h5>{errors.email}</h5>}
+            </ErrorMessage>
 
-          <label htmlFor="message">Message:</label>
-          <TextArea
-            name="message"
-            value={input.message}
-            onChange={(e) => handleChange(e)}
-          />
-          <ErrorMessage>
-            {errors.message && <h5>{errors.message}</h5>}
-          </ErrorMessage>
+            <label htmlFor="message">Message:</label>
+            <TextArea
+              name="message"
+              value={input.message}
+              onChange={(e) => handleChange(e)}
+            />
+            <ErrorMessage>
+              {errors.message && <h5>{errors.message}</h5>}
+            </ErrorMessage>
 
-          <Button primary big type="submit" onClick={validateInput}>
-            Send
-          </Button>
-        </StyledForm>
+            <Button primary big type="submit" onClick={validateInput}>
+              Send
+            </Button>
+          </StyledForm>
+        ) : (
+          <>
+            <img src="../assets/images/41.png" alt="email" />
+            <Button primary={false} big onClick={() => setSubmitted(false)}>
+              Contact again{' '}
+            </Button>
+          </>
+        )}
       </FormContainer>
     </>
   );

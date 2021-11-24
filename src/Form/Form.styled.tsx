@@ -4,7 +4,7 @@ const sharedStyles = css`
   height: 30px;
   border-radius: 5px;
   border: 1px solid #ddd;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
   padding: 20px;
   width: 100%;
   outline: none;
@@ -42,5 +42,5 @@ export const TextArea = styled.textarea`
 
 export const ErrorMessage = styled.div`
   color: #ff3644;
-  margin: 0 0 40px 0;
+  margin: 0 0 10px 0;
 `;
