@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button } from '../globalStyle';
 import {
   Input,
@@ -12,9 +12,19 @@ const initialState = { name: '', email: '', message: '' };
 
 const Form: React.FC = () => {
   const [input, setInput] = useState(initialState);
+  const [error, setError] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    for (let key in input) {
+      if (input[key as keyof InputProps] === '') {
+        setError(`${key} is missing `);
+        return;
+      }
+    }
+    setError('');
+    console.log(input);
   };
 
   const handleChange = (
@@ -41,7 +51,7 @@ const Form: React.FC = () => {
           />
           <label htmlFor="email">Email:</label>
           <Input
-            type="text"
+            type="email"
             name="email"
             value={input.email}
             onChange={(e) => handleChange(e)}
@@ -52,10 +62,9 @@ const Form: React.FC = () => {
             value={input.message}
             onChange={(e) => handleChange(e)}
           />
-          <ErrorMessage>
-            <h5>Error Message</h5>
-          </ErrorMessage>
-          <Button primary big>
+          <ErrorMessage>{error && <h5>{error}</h5>}</ErrorMessage>
+
+          <Button primary big type="submit">
             Send
           </Button>
         </StyledForm>
@@ -63,5 +72,11 @@ const Form: React.FC = () => {
     </>
   );
 };
+
+interface InputProps {
+  name: string;
+  email: string;
+  message: string;
+}
 
 export default Form;

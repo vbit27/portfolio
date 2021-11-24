@@ -117,6 +117,8 @@ export const Button = styled.button<ButtonProps>`
 interface ButtonProps {
   primary: boolean;
   big: boolean;
+  onClick?: (e?: React.FormEvent<HTMLFormElement>) => void; //change optional
+  type?: string | undefined;
 }
 
 export default GlobalStyle;
