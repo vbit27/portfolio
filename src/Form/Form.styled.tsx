@@ -7,6 +7,11 @@ const sharedStyles = css`
   margin: 10px 0 20px 0;
   padding: 20px;
   width: 100%;
+  outline: none;
+
+  &:focus {
+    border: 1px solid red;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -27,10 +32,6 @@ export const Input = styled.input`
   display: block;
 
   ${sharedStyles}
-
-  &:active {
-    border: 1px solid red;
-  }
 `;
 
 export const TextArea = styled.textarea`
