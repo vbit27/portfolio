@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../../globalStyle';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
   InfoSec,
   InfoColumn,
@@ -11,6 +12,9 @@ import {
   ImgWrapper,
   Img,
 } from './InfoSection.styled';
+import gsap from 'gsap';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const InfoSection: React.FC<InfoSectionProps> = ({
   imgStart,
@@ -23,13 +27,27 @@ const InfoSection: React.FC<InfoSectionProps> = ({
   alt,
   start,
 }) => {
+  gsap.from('.content-main', {
+    duration: 3,
+    y: '100',
+    opacity: 0,
+    ease: 'easy-in',
+    scrollTrigger: {
+      trigger: 'content',
+      start: 'top 90%',
+      end: 'bottom 60%',
+      markers: true,
+      toggleActions: 'restart complete reverse reset',
+    },
+  });
+
   return (
     <>
-      <InfoSec>
+      <InfoSec className="content-main">
         <InfoRow imgStart={imgStart}>
           <InfoColumn>
             <TextWrapper>
-              <h3>{headline} </h3>
+              <h3 className="content">{headline} </h3>
               <Description>{description}</Description>
               {subtittle && <h5>{subtittle}</h5>}
               <ButtonContainer>
@@ -50,7 +68,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({
               </ButtonContainer>
             </TextWrapper>
           </InfoColumn>
-          <InfoColumn>
+          <InfoColumn className="content">
             <ImgWrapper start={start}>
               <Img src={img} alt={alt} />
             </ImgWrapper>

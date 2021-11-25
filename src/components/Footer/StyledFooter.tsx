@@ -9,6 +9,7 @@ import {
   FooterLink,
   FooterItem,
   TextWrapper,
+  ExternalLink,
 } from './StyledFooter.styled';
 
 const StyledFooter: React.FC = () => {
@@ -32,11 +33,6 @@ const StyledFooter: React.FC = () => {
                     <p>projects</p>
                   </FooterLink>
                 </FooterItem>
-                <FooterItem>
-                  <FooterLink to="/">
-                    <p>about</p>
-                  </FooterLink>
-                </FooterItem>
               </FooterMenu>
             </FooterColumn>
             <FooterColumn>
@@ -45,19 +41,22 @@ const StyledFooter: React.FC = () => {
               </MenuTittle>
               <FooterMenu>
                 <FooterItem>
-                  <FooterLink to="/">
+                  <ExternalLink
+                    href="https://github.com/vbit27"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <p>github</p>
-                  </FooterLink>
+                  </ExternalLink>
                 </FooterItem>
                 <FooterItem>
-                  <FooterLink to="/">
+                  <ExternalLink
+                    href="https://www.linkedin.com/in/vasilis-bitounis/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <p>linkedin</p>
-                  </FooterLink>
-                </FooterItem>
-                <FooterItem>
-                  <FooterLink to="/">
-                    <p>website</p>
-                  </FooterLink>
+                  </ExternalLink>
                 </FooterItem>
               </FooterMenu>
             </FooterColumn>

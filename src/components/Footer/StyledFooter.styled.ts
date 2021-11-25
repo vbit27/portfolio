@@ -68,6 +68,14 @@ export const FooterLink = styled(Link)`
   width: fit-content;
 `;
 
+export const ExternalLink = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  width: fit-content;
+`;
+
 export const TextWrapper = styled.div`
   display: flex;
   justify-content: flex-start;

@@ -5,6 +5,11 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  ::selection{
+    background-color: #ff3644;
+    color: white;
+  }
 }
 
 html {font-size: 100%;} /*16px*/
