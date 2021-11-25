@@ -35,9 +35,13 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  min-height: 100px;
+  min-height: 300px;
   resize: none;
   ${sharedStyles}
+
+  @media screen and (max-width: 960px) {
+    min-height: 200px;
+  }
 `;
 
 export const ErrorMessage = styled.div`

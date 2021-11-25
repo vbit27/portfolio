@@ -15,8 +15,13 @@ export const FooterRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 100px 0;
+  margin-bottom: 50px;
   width: 100%;
+
+  p {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+  }
 `;
 
 export const FooterColumn = styled.div`
@@ -26,6 +31,7 @@ export const FooterColumn = styled.div`
   flex: 1;
   max-width: 25%;
   flex-basis: 25%;
+  word-break: break-all;
 
   @media screen and (max-width: 768px) {
     max-width: 50%;
@@ -34,14 +40,15 @@ export const FooterColumn = styled.div`
 `;
 
 export const MenuTittle = styled.h3`
-  margin-bottom: 30px;
+  font-size: 28px;
+  margin-bottom: 15px;
 `;
 
 export const FooterMenu = styled.ul`
   display: flex;
   flex-direction: column;
-
   list-style: none;
+  width: 100%;
 `;
 
 export const FooterItem = styled.li`
@@ -57,4 +64,18 @@ export const FooterLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   height: 100%;
+  width: fit-content;
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    color: grey;
+  }
 `;

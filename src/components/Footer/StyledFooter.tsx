@@ -8,6 +8,7 @@ import {
   FooterMenu,
   FooterLink,
   FooterItem,
+  TextWrapper,
 } from './StyledFooter.styled';
 
 const StyledFooter: React.FC = () => {
@@ -64,9 +65,12 @@ const StyledFooter: React.FC = () => {
             <FooterColumn>
               <MenuTittle>contact</MenuTittle>
               <p>vasil.bituni@gmail.com</p>
-              <p>+49 157 8211 68 55</p>
+              <p>+4915782116855</p>
             </FooterColumn>
           </FooterRow>
+          <TextWrapper>
+            <p>© vasil bituni 2022</p>
+          </TextWrapper>
         </FooterContainer>
       </Footer>
     </>
