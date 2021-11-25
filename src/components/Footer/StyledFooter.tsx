@@ -18,7 +18,9 @@ const StyledFooter: React.FC = () => {
         <FooterContainer>
           <FooterRow>
             <FooterColumn>
-              <MenuTittle>explore</MenuTittle>
+              <MenuTittle>
+                explore<span style={{ color: 'red' }}>.</span>
+              </MenuTittle>
               <FooterMenu>
                 <FooterItem>
                   <FooterLink to="/">
@@ -38,7 +40,9 @@ const StyledFooter: React.FC = () => {
               </FooterMenu>
             </FooterColumn>
             <FooterColumn>
-              <MenuTittle>social</MenuTittle>
+              <MenuTittle>
+                social<span style={{ color: 'red' }}>.</span>
+              </MenuTittle>
               <FooterMenu>
                 <FooterItem>
                   <FooterLink to="/">
@@ -58,12 +62,16 @@ const StyledFooter: React.FC = () => {
               </FooterMenu>
             </FooterColumn>
             <FooterColumn>
-              <MenuTittle>address</MenuTittle>
+              <MenuTittle>
+                address<span style={{ color: 'red' }}>.</span>
+              </MenuTittle>
               <p>10967</p>
               <p>Berlin</p>
             </FooterColumn>
             <FooterColumn>
-              <MenuTittle>contact</MenuTittle>
+              <MenuTittle>
+                contact<span style={{ color: 'red' }}>.</span>
+              </MenuTittle>
               <p>vasil.bituni@gmail.com</p>
               <p>+4915782116855</p>
             </FooterColumn>

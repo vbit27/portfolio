@@ -27,17 +27,32 @@ export const Navbar: React.FC = () => {
           </MobileIcon>
           <NavMenu click={click}>
             <NavItem>
-              <NavLinks to={'/'}>
+              <NavLinks
+                to={'projects'}
+                smooth={true}
+                duration={1300}
+                offset={-100}
+              >
                 <p>projects</p>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to={'/'}>
+              <NavLinks
+                to={'about'}
+                smooth={true}
+                duration={1300}
+                offset={-100}
+              >
                 <p>about</p>
               </NavLinks>
             </NavItem>{' '}
             <NavItem>
-              <NavLinks to={'/'}>
+              <NavLinks
+                to={'contact'}
+                smooth={true}
+                duration={1300}
+                offset={-100}
+              >
                 <p>contact</p>
               </NavLinks>
             </NavItem>

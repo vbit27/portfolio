@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import { Container } from '../../globalStyle';
 
@@ -55,7 +55,7 @@ export const NavMenu = styled.ul<NavMenuProps>`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 60px;
     left: ${({ click }) => (click ? 0 : '-100%')};
@@ -79,6 +79,7 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  cursor: pointer;
 
   @media screen and (max-width: 960px) {
     text-align: center;

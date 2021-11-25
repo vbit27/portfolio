@@ -9,20 +9,27 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
-      <h3>
-        projects<span style={{ color: 'red' }}>.</span>
-      </h3>
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjThree} />
-      <h3>
-        about me<span style={{ color: 'red' }}>.</span>
-      </h3>
-      <InfoSection {...homeObjTwo} />
-      <SkillsSection />
-      <h3>
-        let's talk<span style={{ color: 'red' }}>.</span>
-      </h3>
-      <Form />
+      <section id="projects">
+        <h3>
+          projects<span style={{ color: 'red' }}>.</span>
+        </h3>
+
+        <InfoSection {...homeObjOne} />
+        <InfoSection {...homeObjThree} />
+      </section>
+      <section id="about">
+        <h3>
+          about me<span style={{ color: 'red' }}>.</span>
+        </h3>
+        <InfoSection {...homeObjTwo} />
+        <SkillsSection />
+      </section>
+      <section id="contact">
+        <h3>
+          let's talk<span style={{ color: 'red' }}>.</span>
+        </h3>
+        <Form />
+      </section>
     </>
   );
 };

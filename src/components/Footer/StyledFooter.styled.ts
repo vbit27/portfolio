@@ -5,6 +5,7 @@ import { Container } from '../../globalStyle';
 export const Footer = styled.footer`
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #e8e8e8;
 `;
 
 export const FooterContainer = styled(Container)`
@@ -15,7 +16,7 @@ export const FooterRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 100%;
 
   p {
@@ -69,7 +70,7 @@ export const FooterLink = styled(Link)`
 
 export const TextWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
 
