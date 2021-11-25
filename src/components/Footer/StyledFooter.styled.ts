@@ -14,12 +14,14 @@ export const FooterContainer = styled(Container)`
 export const FooterRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  margin: 100px 0;
   width: 100%;
 `;
 
 export const FooterColumn = styled.div`
-  margin-bottom: 15px;
+  margin-top: 60px;
+  margin-bottom: 10px;
   padding-right: 15px;
   flex: 1;
   max-width: 25%;
@@ -31,8 +33,28 @@ export const FooterColumn = styled.div`
   }
 `;
 
-export const MenuTittle = styled.h3``;
+export const MenuTittle = styled.h3`
+  margin-bottom: 30px;
+`;
 
-export const FooterMenu = styled.ul``;
+export const FooterMenu = styled.ul`
+  display: flex;
+  flex-direction: column;
 
-export const FooterLink = styled(Link)``;
+  list-style: none;
+`;
+
+export const FooterItem = styled.li`
+  height: 40px;
+
+  /*@media screen and (max-width: 960px){
+
+  }*/
+`;
+
+export const FooterLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+`;
