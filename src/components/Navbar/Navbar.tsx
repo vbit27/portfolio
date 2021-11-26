@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
           <NavLogo to="/" className="animation-header">
             <h3>vB</h3>
           </NavLogo>
-          <MobileIcon onClick={handleClick}>
+          <MobileIcon onClick={handleClick} className="animation-header">
             {click ? <AiOutlineClose /> : <AiOutlineMenu />}
           </MobileIcon>
           <NavMenu click={click}>

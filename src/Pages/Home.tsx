@@ -19,7 +19,7 @@ const Home: React.FC = () => {
     elements.forEach((box) => {
       gsap.from(box.current, {
         duration: 3,
-        y: '100',
+        y: '50',
         opacity: 0,
         ease: 'ease-in',
         scrollTrigger: {
