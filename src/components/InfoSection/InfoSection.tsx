@@ -12,6 +12,7 @@ import {
   ImgWrapper,
   Img,
 } from './InfoSection.styled';
+import gsap from 'gsap';
 
 const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
   (
@@ -28,13 +29,19 @@ const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
     },
     ref
   ) => {
+    var sections = gsap.utils.toArray('.main');
+
+    useEffect(() => {
+      console.log(sections);
+    }, []);
+
     return (
       <>
-        <InfoSec className="content-main" ref={ref}>
-          <InfoRow imgStart={imgStart} className="first">
+        <InfoSec className="content" ref={ref}>
+          <InfoRow imgStart={imgStart}>
             <InfoColumn>
-              <TextWrapper>
-                <h3 className="content">{headline} </h3>
+              <TextWrapper className="main">
+                <h3>{headline} </h3>
                 <Description>{description}</Description>
                 {subtittle && <h5>{subtittle}</h5>}
                 <ButtonContainer>
@@ -56,7 +63,7 @@ const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
               </TextWrapper>
             </InfoColumn>
             <InfoColumn className="content">
-              <ImgWrapper start={start}>
+              <ImgWrapper start={start} className="main">
                 <Img src={img} alt={alt} />
               </ImgWrapper>
             </InfoColumn>

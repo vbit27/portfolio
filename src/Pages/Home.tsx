@@ -5,13 +5,33 @@ import InfoSection from '../components/InfoSection/InfoSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
 import Form from '../Form/Form';
 import { homeObjOne, homeObjThree, homeObjTwo } from './Data';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Home: React.FC = () => {
-  const ref = React.createRef<HTMLDivElement>();
+  const ref1 = React.createRef<HTMLDivElement>();
+  const ref2 = React.createRef<HTMLDivElement>();
+  const ref3 = React.createRef<HTMLDivElement>();
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    console.log(ref.current);
-  }, [ref]);
+    const elements = [ref1, ref2, ref3];
+
+    elements.forEach((box) => {
+      gsap.from(box.current, {
+        duration: 3,
+        y: '100',
+        opacity: 0,
+        ease: 'ease-in',
+        scrollTrigger: {
+          trigger: box.current,
+          start: 'top 90%',
+          end: 'bottom 60%',
+          scrub: true,
+          toggleActions: 'restart complete reverse reset',
+        },
+      });
+    });
+  }, []);
 
   return (
     <>
@@ -20,14 +40,14 @@ const Home: React.FC = () => {
         <h3>
           projects<span style={{ color: 'red' }}>.</span>
         </h3>
-        <InfoSection {...homeObjOne} ref={ref} />
-        <InfoSection {...homeObjThree} />
+        <InfoSection {...homeObjOne} ref={ref1} />
+        <InfoSection {...homeObjThree} ref={ref2} />
       </section>
       <section id="about">
         <h3>
           about me<span style={{ color: 'red' }}>.</span>
         </h3>
-        <InfoSection {...homeObjTwo} />
+        <InfoSection {...homeObjTwo} ref={ref3} />
         <SkillsSection />
       </section>
       <section id="contact">
