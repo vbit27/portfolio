@@ -65,7 +65,7 @@ export const Circle = styled.span`
   background-color: #000;
   border-radius: 50%;
   display: inline-block;
-  //animation-duration: 2s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce-2;
   animation-timing-function: ease;

@@ -6,6 +6,7 @@ import SkillsSection from '../components/SkillsSection/SkillsSection';
 import Form from '../Form/Form';
 import { homeObjOne, homeObjThree, homeObjTwo } from './Data';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SkillSection from '../components/SkillSection/SkillSection';
 
 const Home: React.FC = () => {
   const ref1 = React.createRef<HTMLDivElement>();
@@ -36,6 +37,16 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
+      <section id="about">
+        <h3>
+          skills<span style={{ color: 'red' }}>.</span>
+        </h3>
+        <SkillSection />
+        <h3>
+          about me<span style={{ color: 'red' }}>.</span>
+        </h3>
+        <InfoSection {...homeObjTwo} ref={ref3} />
+      </section>
       <section id="projects">
         <h3>
           projects<span style={{ color: 'red' }}>.</span>
@@ -43,13 +54,7 @@ const Home: React.FC = () => {
         <InfoSection {...homeObjOne} ref={ref1} />
         <InfoSection {...homeObjThree} ref={ref2} />
       </section>
-      <section id="about">
-        <h3>
-          about me<span style={{ color: 'red' }}>.</span>
-        </h3>
-        <InfoSection {...homeObjTwo} ref={ref3} />
-        <SkillsSection />
-      </section>
+
       <section id="contact">
         <h3>
           let's talk<span style={{ color: 'red' }}>.</span>

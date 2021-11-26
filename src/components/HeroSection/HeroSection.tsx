@@ -25,6 +25,19 @@ const HeroSection: React.FC = () => {
       .from('.animation-circle', {
         opacity: 0,
       });
+
+    gsap.to('.animation-circle', {
+      duration: 3,
+      ease: 'ease-in',
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '.animation-circle',
+        start: 'top 90%',
+        end: 'bottom 30%',
+        scrub: true,
+        toggleActions: 'restart complete reverse reset',
+      },
+    });
   }, []);
 
   return (

@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../../globalStyle';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
   InfoSec,
   InfoColumn,
@@ -12,7 +11,6 @@ import {
   ImgWrapper,
   Img,
 } from './InfoSection.styled';
-import gsap from 'gsap';
 
 const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
   (
