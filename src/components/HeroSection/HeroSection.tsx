@@ -20,15 +20,10 @@ const HeroSection: React.FC = () => {
       .from('.animation-subtittle', {
         opacity: 0,
         x: -50,
-        duration: 1,
-      })
-      .from('.animation-line', {
-        opacity: 0,
-        y: 50,
+        duration: 0.7,
       })
       .from('.animation-circle', {
         opacity: 0,
-        y: 50,
       });
   }, []);
 
@@ -45,11 +40,12 @@ const HeroSection: React.FC = () => {
             on building accessible, human-centered products.
           </h4>
         </TextWrapper>
-        <LineContainer className="animation-line" />
         <Circle className="animation-circle" />
       </HeroContainer>
     </>
   );
 };
+
+// <LineContainer className="animation-line" /> delete style component if not used
 
 export default HeroSection;

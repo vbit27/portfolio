@@ -1,4 +1,5 @@
-import React from 'react';
+import gsap from 'gsap';
+import React, { MutableRefObject, useEffect, useRef } from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
 import InfoSection from '../components/InfoSection/InfoSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
@@ -6,6 +7,12 @@ import Form from '../Form/Form';
 import { homeObjOne, homeObjThree, homeObjTwo } from './Data';
 
 const Home: React.FC = () => {
+  const ref = React.createRef<HTMLDivElement>();
+
+  useEffect(() => {
+    console.log(ref.current);
+  }, [ref]);
+
   return (
     <>
       <HeroSection />
@@ -13,8 +20,7 @@ const Home: React.FC = () => {
         <h3>
           projects<span style={{ color: 'red' }}>.</span>
         </h3>
-
-        <InfoSection {...homeObjOne} />
+        <InfoSection {...homeObjOne} ref={ref} />
         <InfoSection {...homeObjThree} />
       </section>
       <section id="about">
