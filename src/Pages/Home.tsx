@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import React, { MutableRefObject, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
 import InfoSection from '../components/InfoSection/InfoSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         opacity: 0,
         ease: 'ease-in',
         scrollTrigger: {
-          trigger: box.current,
+          trigger: box.current?.querySelector('.main'),
           start: 'top 90%',
           end: 'bottom 60%',
           scrub: true,

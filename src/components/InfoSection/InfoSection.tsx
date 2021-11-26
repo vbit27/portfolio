@@ -29,18 +29,12 @@ const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
     },
     ref
   ) => {
-    var sections = gsap.utils.toArray('.main');
-
-    useEffect(() => {
-      console.log(sections);
-    }, []);
-
     return (
       <>
-        <InfoSec className="content" ref={ref}>
+        <InfoSec className="content">
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
-              <TextWrapper className="main">
+              <TextWrapper>
                 <h3>{headline} </h3>
                 <Description>{description}</Description>
                 {subtittle && <h5>{subtittle}</h5>}
@@ -62,7 +56,7 @@ const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
                 </ButtonContainer>
               </TextWrapper>
             </InfoColumn>
-            <InfoColumn className="content">
+            <InfoColumn className="content" ref={ref}>
               <ImgWrapper start={start} className="main">
                 <Img src={img} alt={alt} />
               </ImgWrapper>
