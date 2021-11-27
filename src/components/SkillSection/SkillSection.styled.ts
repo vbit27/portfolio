@@ -1,12 +1,23 @@
 import styled from 'styled-components';
 
+export const TittleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+`;
+
 export const SkillSec = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 100px 0;
+  margin: 50px 0 100px 0;
 `;
 
 export const SkillWrapper = styled.div`
@@ -14,12 +25,9 @@ export const SkillWrapper = styled.div`
   height: 60px;
   padding: 0 20px;
   flex: 1;
-  max-width: 20%;
-  flex-basis: 20%;
+  max-width: fit-content;
 
   @media screen and (max-width: 1020px) {
-    max-width: 40%;
-    flex-basis: 40%;
     padding: 0 10px;
   }
 
@@ -34,6 +42,7 @@ export const SkillItem = styled.div`
   display: flex;
   border-radius: 15px;
   background: #f3f3f3;
+  padding: 0 20px;
 
   @media screen and (max-width: 560px) {
     padding: 0 20px;

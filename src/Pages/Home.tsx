@@ -37,16 +37,7 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
-      <section id="about">
-        <h3>
-          skills<span style={{ color: 'red' }}>.</span>
-        </h3>
-        <SkillSection skills={homeObjSkills} />
-        <h3>
-          about me<span style={{ color: 'red' }}>.</span>
-        </h3>
-        <InfoSection {...homeObjAbout} ref={ref3} />
-      </section>
+
       <section id="projects">
         <h3>
           projects<span style={{ color: 'red' }}>.</span>
@@ -54,7 +45,13 @@ const Home: React.FC = () => {
         <InfoSection {...homeObjOne} ref={ref1} />
         <InfoSection {...homeObjThree} ref={ref2} />
       </section>
-
+      <section id="about">
+        <h3>
+          about me<span style={{ color: 'red' }}>.</span>
+        </h3>
+        <InfoSection {...homeObjAbout} ref={ref3} />
+        <SkillSection skills={homeObjSkills} />
+      </section>
       <section id="contact">
         <h3>
           let's talk<span style={{ color: 'red' }}>.</span>

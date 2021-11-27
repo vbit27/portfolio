@@ -44,10 +44,17 @@ export const homeObjThree = {
 };
 
 export const homeObjSkills = [
-  { img: JSIcon, tittle: 'javaScript' },
+  { img: JSIcon, tittle: 'JavaScript' },
   {
     img: TSIcon,
     tittle: 'TypeScript',
   },
-  { img: ReactIcon, tittle: 'ReactJS' },
+  { img: ReactIcon, tittle: 'GitHub' },
+  { img: ReactIcon, tittle: 'Jest' },
+  { img: ReactIcon, tittle: 'HTML' },
+  { img: ReactIcon, tittle: 'SASS' },
+  { img: ReactIcon, tittle: 'Firgma' },
+  { img: ReactIcon, tittle: 'Photoshop' },
+  { img: ReactIcon, tittle: 'MaterialUI' },
+  { img: ReactIcon, tittle: 'Firebase' },
 ];
