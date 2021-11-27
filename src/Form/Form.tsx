@@ -6,7 +6,9 @@ import {
   StyledForm,
   TextArea,
   ErrorMessage,
+  FormSubmittedWrapper,
 } from './Form.styled';
+import SVGsubmitted from '../assets/images/email-submitted.svg';
 
 const initialState = { name: '', email: '', message: '' };
 
@@ -102,10 +104,14 @@ const Form: React.FC = () => {
           </StyledForm>
         ) : (
           <>
-            <img src="../assets/images/41.png" alt="email" />
-            <Button primary={false} big onClick={() => setSubmitted(false)}>
-              Contact again{' '}
-            </Button>
+            <FormSubmittedWrapper>
+              <h5>email sent</h5>
+              <img src={SVGsubmitted} alt="email" />
+
+              <p>
+                Thanks for your email. I will get back to you within 48 hours.
+              </p>
+            </FormSubmittedWrapper>
           </>
         )}
       </FormContainer>

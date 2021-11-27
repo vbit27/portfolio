@@ -48,3 +48,19 @@ export const ErrorMessage = styled.div`
   color: #ff3644;
   margin: 0 0 10px 0;
 `;
+
+export const FormSubmittedWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    max-width: 200px;
+    margin: 50px 0;
+  }
+
+  p {
+    text-align: center;
+  }
+`;
