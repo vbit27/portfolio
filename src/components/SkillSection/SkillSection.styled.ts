@@ -14,8 +14,8 @@ export const SkillWrapper = styled.div`
   height: 60px;
   padding: 0 20px;
   flex: 1;
-  max-width: 25%;
-  flex-basis: 25%;
+  max-width: 20%;
+  flex-basis: 20%;
 
   @media screen and (max-width: 1020px) {
     max-width: 40%;
@@ -24,9 +24,8 @@ export const SkillWrapper = styled.div`
   }
 
   @media screen and (max-width: 560px) {
-    max-width: 100%;
+    max-width: fit-content;
     flex-basis: 100%;
-    padding: 0 10px;
   }
 `;
 
@@ -35,6 +34,10 @@ export const SkillItem = styled.div`
   display: flex;
   border-radius: 15px;
   background: #f3f3f3;
+
+  @media screen and (max-width: 560px) {
+    padding: 0 20px;
+  }
 `;
 
 export const SkillIcon = styled.div`

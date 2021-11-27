@@ -6,53 +6,32 @@ import {
   SkillWrapper,
   SkillIcon,
 } from './SkillSection.styled';
-import { ReactComponent as JSIcon } from '../../assets/images/JSicon.svg';
-import { ReactComponent as ReactIcon } from '../../assets/images/react.svg';
-import { ReactComponent as TSIcon } from '../../assets/images/typescript.svg';
 
-const SkillSection: React.FC = () => {
+const SkillSection: React.FC<SkillSectionProps> = ({ skills }) => {
+  console.log(skills);
   return (
     <>
       <SkillSec>
-        <SkillWrapper>
-          <SkillItem>
-            <SkillIcon>
-              <JSIcon />
-            </SkillIcon>
-            <SkillText>JavaScript</SkillText>
-          </SkillItem>
-        </SkillWrapper>
-        <SkillWrapper>
-          <SkillItem>
-            <SkillIcon>
-              <ReactIcon />
-            </SkillIcon>
-            <SkillText>React</SkillText>
-          </SkillItem>
-        </SkillWrapper>
-        <SkillWrapper>
-          <SkillItem>
-            <SkillIcon>
-              <TSIcon />
-            </SkillIcon>
-            <SkillText>TypeScript</SkillText>
-          </SkillItem>
-        </SkillWrapper>
-        <SkillWrapper>
-          <SkillItem>
-            <SkillIcon />
-            <SkillText>JavaScript</SkillText>
-          </SkillItem>
-        </SkillWrapper>
-        <SkillWrapper>
-          <SkillItem>
-            <SkillIcon />
-            <SkillText>JavaScript</SkillText>
-          </SkillItem>
-        </SkillWrapper>
+        {skills.map((skill) => (
+          <SkillWrapper>
+            <SkillItem>
+              <SkillIcon>
+                <img src={skill.img} alt={skill.tittle} />
+              </SkillIcon>
+              <SkillText>{skill.tittle}</SkillText>
+            </SkillItem>
+          </SkillWrapper>
+        ))}
       </SkillSec>
     </>
   );
 };
+
+interface SkillSectionProps {
+  skills: {
+    img: string;
+    tittle: string;
+  }[];
+}
 
 export default SkillSection;
