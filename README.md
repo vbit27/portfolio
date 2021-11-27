@@ -1,3 +1,5 @@
 # Things to do
 
-- Show icon after successfully sending an Email
+- Close mobile menu after clicking
+- Add icons for all the technologies
+- Add content
