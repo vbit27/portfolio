@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
 import InfoSection from '../components/InfoSection/InfoSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
-import Form from '../Form/Form';
+import Form from '../components/Form/Form';
 import { homeObjAbout, homeObjOne, homeObjSkills, homeObjThree } from './Data';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SkillSection from '../components/SkillSection/SkillSection';
@@ -16,6 +16,15 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const elements = [ref1, ref2, ref3];
+
+    let spec = [0, 1, 2, 3];
+    let n = 10;
+
+    n.toString()
+      .split('')
+      .forEach((num) => {
+        if (spec.includes(Number(num))) return 'Not!!';
+      });
 
     elements.forEach((box) => {
       gsap.from(box.current, {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from '../globalStyle';
+import { Button } from '../../globalStyle';
 import {
   Input,
   FormContainer,
@@ -8,7 +8,7 @@ import {
   ErrorMessage,
   FormSubmittedWrapper,
 } from './Form.styled';
-import SVGsubmitted from '../assets/images/email-submitted.svg';
+import SVGsubmitted from '../../assets/images/email-submitted.svg';
 
 const initialState = { name: '', email: '', message: '' };
 

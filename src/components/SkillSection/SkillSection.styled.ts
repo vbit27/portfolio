@@ -4,6 +4,7 @@ export const TittleWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 
   h3 {
     font-size: 28px;
@@ -17,7 +18,7 @@ export const SkillSec = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 100px 0;
+  margin: 50px 0 200px 0;
 `;
 
 export const SkillWrapper = styled.div`

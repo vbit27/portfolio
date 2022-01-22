@@ -21,7 +21,7 @@ export const homeObjOne = {
 export const homeObjAbout = {
   imgStart: true,
   headline: 'I am web-developer based in Berlin',
-  description: `A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track.  Create and save new playlists of recommended tracks based on your existing playlists and more.`,
+  description: `I’m  a front-end developer and general doodler with a keen eye for creating engaging UI, bringing products to life.`,
   subtittle: '',
   img: vaso,
   alt: 'hello',
