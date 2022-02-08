@@ -81,7 +81,7 @@ export const homeObjSkills = [
   { img: ReactIcon, tittle: 'React' },
   { img: TSIcon, tittle: 'TypeScript' },
   { img: SAASicon, tittle: 'SASS' },
-  { img: MaterialUI, tittle: 'SASS' },
+  { img: MaterialUI, tittle: 'MaterialUI' },
   { img: StyledComponentsIcon, tittle: 'Styled Components' },
   { img: Node, tittle: 'Node.js' },
   { img: MongoDB, tittle: 'MongoDB' },
