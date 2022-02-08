@@ -4,7 +4,13 @@ import HeroSection from '../components/HeroSection/HeroSection';
 import InfoSection from '../components/InfoSection/InfoSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
 import Form from '../components/Form/Form';
-import { homeObjAbout, homeObjOne, homeObjSkills, homeObjThree } from './Data';
+import {
+  homeObjAbout,
+  homeObjOne,
+  homeObjSkills,
+  homeObjThree,
+  homeObjTwo,
+} from './Data';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SkillSection from '../components/SkillSection/SkillSection';
 
@@ -52,7 +58,8 @@ const Home: React.FC = () => {
           projects<span style={{ color: 'red' }}>.</span>
         </h3>
         <InfoSection {...homeObjOne} ref={ref1} />
-        <InfoSection {...homeObjThree} ref={ref2} />
+        <InfoSection {...homeObjTwo} />
+        <InfoSection {...homeObjThree} />
       </section>
       <section id="about">
         <h3>

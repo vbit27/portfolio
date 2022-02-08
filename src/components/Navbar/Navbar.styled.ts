@@ -28,7 +28,7 @@ export const NavLogo = styled(Link)`
   justify-self: left;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  width: 25px;
 `;
 
 export const MobileIcon = styled.div`

@@ -9,6 +9,7 @@ import {
   NavLinks,
 } from './Navbar.styled';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { ReactComponent as Logo } from '../../assets/images/logo.svg';
 import gsap from 'gsap';
 
 export const Navbar: React.FC = () => {
@@ -31,7 +32,7 @@ export const Navbar: React.FC = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/" className="animation-header">
-            <h3>vB</h3>
+            <Logo />
           </NavLogo>
           <MobileIcon onClick={handleClick} className="animation-header">
             {click ? <AiOutlineClose /> : <AiOutlineMenu />}
