@@ -34,6 +34,7 @@ export const homeObjOne = {
   start: false,
   primaryBtnLabel: 'live',
   secondaryBtnLabel: 'view code',
+  secondaryBtnLink: 'https://github.com/vbit27/local-guide',
 };
 
 export const homeObjTwo = {
@@ -47,6 +48,7 @@ export const homeObjTwo = {
   start: false,
   primaryBtnLabel: 'live',
   secondaryBtnLabel: 'view code',
+  secondaryBtnLink: 'https://github.com/vbit27/recipe-app',
 };
 
 export const homeObjThree = {
@@ -60,6 +62,7 @@ export const homeObjThree = {
   start: false,
   primaryBtnLabel: 'live',
   secondaryBtnLabel: 'view code',
+  secondaryBtnLink: 'https://github.com/vbit27/find-the-character',
 };
 
 export const homeObjAbout = {

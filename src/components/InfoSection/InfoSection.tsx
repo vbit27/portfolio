@@ -24,6 +24,7 @@ const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
       img,
       alt,
       start,
+      secondaryBtnLink,
     },
     ref
   ) => {
@@ -45,11 +46,15 @@ const InfoSection = React.forwardRef<HTMLDivElement, InfoSectionProps>(
                     </Link>
                   )}
                   {secondaryBtnLabel && (
-                    <Link to="/">
+                    <a
+                      href={secondaryBtnLink!}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <Button primary={false} big>
                         {secondaryBtnLabel}
                       </Button>
-                    </Link>
+                    </a>
                   )}
                 </ButtonContainer>
               </TextWrapper>
@@ -77,6 +82,7 @@ interface InfoSectionProps {
   primaryBtnLabel: string;
   secondaryBtnLabel: string;
   ref?: React.MutableRefObject<HTMLDivElement | null>;
+  secondaryBtnLink?: string;
 }
 
 export default InfoSection;
