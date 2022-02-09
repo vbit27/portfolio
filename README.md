@@ -40,7 +40,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -123,8 +122,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Vasil Bituni - [Linkedin](www.linkedin.com/in/vasilis-bitounis) - vasil.bituni@gmail.com
 
 Project Link: [https://github.com/vbit27/portfolio](https://github.com/vbit27/portfolio)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
