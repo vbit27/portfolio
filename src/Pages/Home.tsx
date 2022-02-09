@@ -13,6 +13,7 @@ import {
 } from './Data';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SkillSection from '../components/SkillSection/SkillSection';
+import ContactForm from '../components/Contact/ContactForm';
 
 const Home: React.FC = () => {
   const ref1 = React.createRef<HTMLDivElement>();
@@ -69,10 +70,19 @@ const Home: React.FC = () => {
         <SkillSection skills={homeObjSkills} />
       </section>
       <section id="contact">
-        <h3>
-          let's talk<span style={{ color: 'red' }}>.</span>
-        </h3>
-        <Form />
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}
+        >
+          <h3>
+            let's get in touch
+            <span style={{ color: 'red' }}>.</span>
+          </h3>
+          <ContactForm />
+        </div>
       </section>
     </>
   );
