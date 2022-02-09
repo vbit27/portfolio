@@ -13,11 +13,15 @@ const ContactForm: React.FC = () => {
             <br />
             Send me over a message, and let's chat.
             <br /> <br />
-            <Link href="mailto:vasil.bituni@gmail.com">
-              vasil.bituni@gmail.com
-            </Link>
+            <i>vasil.bituni@gmail.com</i>
           </h4>
-          <Button primary big>
+          <Button
+            primary
+            big
+            onClick={() =>
+              (window.location.href = 'mailto:vasil.bituni@gmail.com')
+            }
+          >
             Contact Me
           </Button>
         </ContactContainer>
