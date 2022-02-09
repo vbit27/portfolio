@@ -45,6 +45,7 @@ export const Navbar: React.FC = () => {
                 duration={1300}
                 offset={-100}
                 className="animation-header"
+                onClick={() => setClick(false)}
               >
                 <p>projects</p>
               </NavLinks>
@@ -56,6 +57,7 @@ export const Navbar: React.FC = () => {
                 duration={1300}
                 offset={-100}
                 className="animation-header"
+                onClick={() => setClick(false)}
               >
                 <p>about</p>
               </NavLinks>
@@ -67,6 +69,7 @@ export const Navbar: React.FC = () => {
                 duration={1300}
                 offset={-100}
                 className="animation-header"
+                onClick={() => setClick(false)}
               >
                 <p>contact</p>
               </NavLinks>
