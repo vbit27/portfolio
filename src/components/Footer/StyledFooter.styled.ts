@@ -86,5 +86,9 @@ export const TextWrapper = styled.div`
     font-size: 16px;
     letter-spacing: 1.1px;
     color: grey;
+
+    :hover {
+      color: #ff3644;
+    }
   }
 `;

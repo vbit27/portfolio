@@ -76,7 +76,13 @@ const StyledFooter: React.FC = () => {
             </FooterColumn>
           </FooterRow>
           <TextWrapper>
-            <p>© vasil bituni 2022</p>
+            <a
+              href="https://github.com/vbit27/portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>© vasil bituni 2022</p>
+            </a>
           </TextWrapper>
         </FooterContainer>
       </Footer>
