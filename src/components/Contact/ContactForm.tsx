@@ -12,9 +12,10 @@ const ContactForm: React.FC = () => {
             Have an exciting project where you need some help?
             <br />
             Send me over a message, and let's chat.
-            <br /> <br />
-            <i>vasil.bituni@gmail.com</i>
           </h4>
+          <p>
+            <i>vasil.bituni@gmail.com</i>
+          </p>
           <Button
             primary
             big
