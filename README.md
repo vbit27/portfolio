@@ -8,17 +8,17 @@
 <div align="center">
     <img src="src/assets/images/fish-icon.svg" alt="fish logo" width="80" height="80">
 
-  <h3 align="center">Local Guide</h3>
+  <h3 align="center">Personal Portfolio</h3>
 
   <p align="center">
-    A curated list of the most budget-friendly places in Saranda, Albania. <br/> This is a non-profit project created from volunteers. Our mission is to help visitors avoid tourist-traps and to reward small business owners, who don't inflect their prices during high-season. 
+    My personal portfolio where I showcase some of my favorite projects.
     <br />
-    <a href="https://github.com/vbit27/local-guide"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/vbit27/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://local-guide.netlify.app/" target="_blank">View Demo</a>
+    <a href="https://github.com/vbit27/portfolio" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/vbit27/local-guide/issues">Report Bug</a>
+    <a href="https://github.com/vbit27/portfolio/issues">Report Bug</a>
     
   </p>
 </div>
@@ -37,7 +37,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -45,7 +44,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 
 <!-- ABOUT THE PROJECT -->
@@ -64,12 +62,10 @@ The Explore page was created using Material UI. Material UI offers a light, user
 
 ### Built With
 
-- [React Google Maps API](https://www.npmjs.com/package/@react-google-maps/api)
-- [Material UI](https://mui.com/)
+- [Styled Components](https://styled-components.com/)
 - [React.js](https://reactjs.org/)
-- [React Router](https://reactrouter.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Axios](https://axios-http.com/docs/intro)
+- [Gsap](https://greensock.com/gsap/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -78,12 +74,6 @@ The Explore page was created using Material UI. Material UI offers a light, user
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-- Get an API key at [Google Map API](https://developers.google.com/maps)
-  (Google API is not for free but it has a free monthly quote)
-- Activate **Maps JavaScript API** and **Places API** inside the dashboard
 
 ### Installation
 
@@ -94,11 +84,6 @@ To get a local copy up and running follow these simple example steps.
 2. Install NPM packages
    ```sh
    npm install
-   ```
-3. Create an `.env` file inside the root folder
-4. Enter your API in `.env`
-   ```js
-   const REACT_APP_GOOGLE_KEY = 'ENTER YOUR API KEY';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -121,10 +106,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## Future Work
 
-- Create a 404 page
-- Create a preview image
-  https://www.youtube.com/watch?v=PjpPJfolInU&ab_channel=%C3%87elikK%C3%B6seo%C4%9Flu
-- Close popup window when changing chategory
+- Create a seperate page for each project where I can share more information
 
 <!-- LICENSE -->
 
@@ -140,13 +122,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Vasil Bituni - [Linkedin](www.linkedin.com/in/vasilis-bitounis) - vasil.bituni@gmail.com
 
-Project Link: [https://github.com/vbit27/local-guide](https://github.com/vbit27/local-guide)
+Project Link: [https://github.com/vbit27/portfolio](https://github.com/vbit27/portfolio)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
