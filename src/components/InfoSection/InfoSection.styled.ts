@@ -37,6 +37,7 @@ export const TextWrapper = styled.div`
 
 export const Description = styled.p`
   padding: 20px 0;
+  white-space: pre-line;
 `;
 
 export const ButtonContainer = styled.div`
