@@ -48,9 +48,9 @@ const HeroSection: React.FC = () => {
             Hi, I'm Vasil. <br />I build things for the web.
           </h1>
           <h4 className="animation-subtittle">
-            I’m a web-developer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I’m focused
-            on building accessible, human-centered products.
+            I am a passionate web-developer with the ambition to make a
+            difference in people’s life by solving real-life problems while
+            building human-centered products.
           </h4>
         </TextWrapper>
         <Circle className="animation-circle" />

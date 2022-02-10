@@ -106,6 +106,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 ## Future Work
 
 - Create a seperate page for each project where I can share more information
+- Create 'Other noteworthy projects' section
 
 <!-- LICENSE -->
 
