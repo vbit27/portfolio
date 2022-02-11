@@ -52,13 +52,11 @@
 ![Recipe App Screen Shot](https://user-images.githubusercontent.com/75995237/152765089-0c4bbd2f-7e9d-49e9-9a40-3e446155c3af.gif)
 
 This is my first personal portfolio for web development. My goal was to create a very clean, modern and minimal look where my projects can take the spotlight.
-
 <br/>
-
+<br/>
 I started by creating my mockups at Figma and slowly translating them into code.
-
 <br/>
-
+<br/>
 The most difficult part of this project was deciding how it should look like without making it tedious for the reader.
 
 ### Future Work
