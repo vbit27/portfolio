@@ -8,12 +8,11 @@ const ContactForm: React.FC = () => {
     <>
       <Contact>
         <ContactContainer>
-          <h4>
+          <p>
             Have an exciting project where you need some help?
             <br />
             Send me over a message, and let's chat.
-          </h4>
-          <p>
+            <br />
             <i>vasil.bituni@gmail.com</i>
           </p>
           <Button

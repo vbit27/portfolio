@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="src/assets/images/fish-icon.svg" alt="fish logo" width="80" height="80">
+    <img src="src/assets/icons/logo.svg" alt="fish logo" width="80" height="80">
 
   <h3 align="center">Personal Portfolio</h3>
 
@@ -16,7 +16,7 @@
     <a href="https://github.com/vbit27/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/vbit27/portfolio" target="_blank">View Demo</a>
+    <a href="https://vasil.netlify.app/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/vbit27/portfolio/issues">Report Bug</a>
     
@@ -51,13 +51,15 @@
 
 ![Recipe App Screen Shot](https://user-images.githubusercontent.com/75995237/152765089-0c4bbd2f-7e9d-49e9-9a40-3e446155c3af.gif)
 
-This app displays a list of restaurants, bars and various services in the city of Saranda, Albania. The recommendations are selected based on a price-quality criteria.
-<br/><br/>
+This is my first personal portfolio for web development. My goal was to create a very clean, modern and minimal look where my projects can take the spotlight.
+<br/>
+I started by creating my mockups at Figma and slowly translating them into code.
+<br/>
+The most difficult part of this project was deciding how it should look like without making it tedious for the reader.
 
-By using Google Maps API, users can see the exact coordinates of the place, as well as some additional information such as: short description, price range, phone number, etc.
-<br/><br/>
+### Future Work
 
-The Explore page was created using Material UI. Material UI offers a light, user-friendly and simple design that allowed to create a responsive page that easily adapts to any possible screen size.
+I am currently creating a separate page for each project, where you will find more information about my thought process and the reasons for the technologies I have chosen.
 
 ### Built With
 
@@ -78,7 +80,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/vbit27/local-guide.git
+   git clone https://github.com/vbit27/portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -102,11 +104,6 @@ If you have a suggestion that would make this better, please fork the repo and c
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## Future Work
-
-- Create a seperate page for each project where I can share more information
-- Create 'Other noteworthy projects' section
 
 <!-- LICENSE -->
 

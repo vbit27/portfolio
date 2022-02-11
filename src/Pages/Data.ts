@@ -42,7 +42,7 @@ export const homeObjTwo = {
   headline: 'Kill your hunger',
   description:
     'An App to help you decide your next meal in three easy steps. This App takes advantage of the Edamam API to show various recipes based on the main ingredient of your choice.',
-  subtittle: 'Edamami-api React react-router typescript axios',
+  subtittle: 'Edamam-api React react-router typescript axios',
   img: img2,
   alt: 'kill your hunger app screenshots',
   start: false,
