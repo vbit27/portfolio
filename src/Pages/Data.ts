@@ -69,7 +69,7 @@ export const homeObjAbout = {
   imgStart: true,
   headline: 'A creative who loves to code',
   description: `Technology has always been at the very core of my interests. From a young age, I've loved the idea of being able to build something new that people around the world can experience and interact with.  \n 
-  I'm passionate about frontend - whether it's web based or mobile, with the intetion to always create intuitive and visually stunning user interfaces. I possess a deep knowledge of JavaScript, TypeScript and React as well as a great understanding of CSS and responsive layouts in particular. \n 
+  I'm passionate about frontend - whether it's web-based or mobile, with the intention to always create intuitive and visually stunning user interfaces. I possess a deep knowledge of JavaScript, TypeScript, and React as well as a great understanding of CSS and responsive layouts in particular. \n 
   In my free time, I learn new technologies, meet friends at Admiral's Brücke, or visit new countries.`,
   subtittle: '',
   img: vaso,
