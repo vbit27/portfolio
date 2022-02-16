@@ -15,6 +15,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SkillSection from '../components/SkillSection/SkillSection';
 import ContactForm from '../components/Contact/ContactForm';
 import { MetaDecorator } from '../components/Util/MetaDecorator';
+import metaThumbnail from '../assets/images/meta.png';
 
 const Home: React.FC = () => {
   const ref1 = React.createRef<HTMLDivElement>();
@@ -56,6 +57,8 @@ const Home: React.FC = () => {
       <MetaDecorator
         title={`Vasil Bituni - Portfolio`}
         description={`Personal web development site`}
+        imgAlt="screenshot of website"
+        imgUrl={metaThumbnail}
       />
       <HeroSection />
       <section id="projects">
