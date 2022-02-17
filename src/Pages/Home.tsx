@@ -2,8 +2,6 @@ import gsap from 'gsap';
 import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
 import InfoSection from '../components/InfoSection/InfoSection';
-import SkillsSection from '../components/SkillsSection/SkillsSection';
-import Form from '../components/Form/Form';
 import {
   homeObjAbout,
   homeObjOne,
@@ -56,7 +54,7 @@ const Home: React.FC = () => {
     <>
       <MetaDecorator
         title="Portfolio - Vasil Bituni"
-        description="Personal web development site"
+        description="My personal web development portfolio, where I present some of my favorite projects of the last years"
         imgAlt="screenshot of website"
         imgUrl={metaThumbnail}
       />
