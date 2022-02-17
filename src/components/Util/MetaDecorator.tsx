@@ -34,11 +34,6 @@ export const MetaDecorator: React.FC<MetaDecoratorProps> = ({
       />
       <meta
         prefix="og: http://ogp.me/ns#"
-        property="og:description"
-        content={description}
-      />
-      <meta
-        prefix="og: http://ogp.me/ns#"
         property="og:image"
         content={metaDecorator.hostname + imgUrl}
       />

@@ -52,12 +52,12 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <MetaDecorator
+      {/* <MetaDecorator
         title="Portfolio - Vasil Bituni"
         description="My personal web development portfolio, where I present some of my favorite projects of the last years"
         imgAlt="screenshot of website"
         imgUrl={metaThumbnail}
-      />
+     />*/}
       <HeroSection />
       <section id="projects">
         <h3>
