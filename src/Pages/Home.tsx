@@ -13,7 +13,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SkillSection from '../components/SkillSection/SkillSection';
 import ContactForm from '../components/Contact/ContactForm';
 import { MetaDecorator } from '../components/Util/MetaDecorator';
-import metaThumbnail from '../assets/images/meta.jpg';
+import metaThumbnail from '../assets/images/meta.png';
 
 const Home: React.FC = () => {
   const ref1 = React.createRef<HTMLDivElement>();
@@ -50,6 +50,8 @@ const Home: React.FC = () => {
     });
   }, []);
 
+  console.log(metaThumbnail);
+
   return (
     <>
       {/* <MetaDecorator
@@ -59,6 +61,7 @@ const Home: React.FC = () => {
         imgUrl={metaThumbnail}
      />*/}
       <HeroSection />
+
       <section id="projects">
         <h3>
           projects<span style={{ color: 'red' }}>.</span>
