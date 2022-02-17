@@ -22,11 +22,28 @@ export const MetaDecorator: React.FC<MetaDecoratorProps> = ({
   return (
     <Helmet>
       <title>{`${title}`}</title>
-      <meta property="og:title" content={title} />
-      <meta name="description" content={description} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={metaDecorator.hostname + imgUrl} />
       <meta
+        prefix="og: http://ogp.me/ns#"
+        property="og:title"
+        content={title}
+      />
+      <meta
+        prefix="og: http://ogp.me/ns#"
+        name="description"
+        content={description}
+      />
+      <meta
+        prefix="og: http://ogp.me/ns#"
+        property="og:description"
+        content={description}
+      />
+      <meta
+        prefix="og: http://ogp.me/ns#"
+        property="og:image"
+        content={metaDecorator.hostname + imgUrl}
+      />
+      <meta
+        prefix="og: http://ogp.me/ns#"
         property="og:url"
         content={
           metaDecorator.hostname +
