@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+const metaDecorator = require('../../assets/metaDecorator.json');
 //Using template literals because helmet throws error
 
 /**<meta property="og:description" content={description} />
@@ -24,10 +25,14 @@ export const MetaDecorator: React.FC<MetaDecoratorProps> = ({
       <meta property="og:title" content={title} />
       <meta name="description" content={`${description}`} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={imgUrl} />
+      <meta property="og:image" content={metaDecorator.hostname + imgUrl} />
       <meta
         property="og:url"
-        content={window.location.pathname + window.location.search}
+        content={
+          metaDecorator.hostname +
+          window.location.pathname +
+          window.location.search
+        }
       />
       <meta name="twitter:image:alt" content={imgAlt} />
     </Helmet>
