@@ -55,8 +55,8 @@ const Home: React.FC = () => {
   return (
     <>
       <MetaDecorator
-        title={`Vasil Bituni - Portfolio`}
-        description={`Personal web development site`}
+        title="Portfolio - Vasil Bituni"
+        description="Personal web development site"
         imgAlt="screenshot of website"
         imgUrl={metaThumbnail}
       />
