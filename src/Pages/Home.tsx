@@ -13,7 +13,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SkillSection from '../components/SkillSection/SkillSection';
 import ContactForm from '../components/Contact/ContactForm';
 import { MetaDecorator } from '../components/Util/MetaDecorator';
-import metaThumbnail from '../assets/images/meta.png';
+import metaThumbnail from '../assets/images/meta.jpg';
 
 const Home: React.FC = () => {
   const ref1 = React.createRef<HTMLDivElement>();
