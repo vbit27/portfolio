@@ -16,7 +16,7 @@
     <a href="https://github.com/vbit27/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://vasil.netlify.app/" target="_blank">View Demo</a>
+    <a href="https://vasilbituni.dev/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/vbit27/portfolio/issues">Report Bug</a>
     

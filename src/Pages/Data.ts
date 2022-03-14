@@ -33,6 +33,7 @@ export const homeObjOne = {
   alt: 'localguide website screenshot',
   start: false,
   primaryBtnLabel: 'live',
+  primaryBtnLink: 'https://local-guide.netlify.app/',
   secondaryBtnLabel: 'view code',
   secondaryBtnLink: 'https://github.com/vbit27/local-guide',
 };
@@ -47,6 +48,7 @@ export const homeObjTwo = {
   alt: 'kill your hunger app screenshots',
   start: false,
   primaryBtnLabel: 'live',
+  primaryBtnLink: 'https://kill-your-hunger.netlify.app/',
   secondaryBtnLabel: 'view code',
   secondaryBtnLink: 'https://github.com/vbit27/recipe-app',
 };
@@ -61,6 +63,7 @@ export const homeObjThree = {
   alt: 'hello',
   start: false,
   primaryBtnLabel: 'live',
+  primaryBtnLink: 'https://find-the-character.netlify.app/',
   secondaryBtnLabel: 'view code',
   secondaryBtnLink: 'https://github.com/vbit27/find-the-character',
 };
